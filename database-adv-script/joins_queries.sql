@@ -47,6 +47,6 @@ FULL OUTER JOIN
     BOOKING b ON u.user_id = b.user_id;
 
 
-EXPLAIN SELECT b.*
+EXPLAIN ANALYZE SELECT b.*
 FROM BOOKING b
 WHERE b.user_id = 'd0eebc99-9c0b-4ef8-bb6d-6bb9bd380a14'; 
