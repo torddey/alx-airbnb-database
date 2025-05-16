@@ -1,5 +1,5 @@
 
---INNER JOIN SCRIPT
+--INNER JOIN SCRIPT--
 SELECT 
     b.booking_id,
     b.property_id,
@@ -14,7 +14,7 @@ INNER JOIN
     "USER" u ON b.user_id = u.user_id;
 
 
---LEFT JOIN SCRIPT
+--LEFT JOIN SCRIPT--
 SELECT 
     p.property_id,
     p.name,
@@ -30,7 +30,7 @@ LEFT JOIN
     REVIEW r ON p.property_id = r.property_id;
 
 
---FULL OUTER JOIN
+--FULL OUTER JOIN SCRIPT--
 SELECT 
     u.user_id AS user_id,
     u.first_name,
