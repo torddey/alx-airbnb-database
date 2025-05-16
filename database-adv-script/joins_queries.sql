@@ -27,8 +27,9 @@ SELECT
 FROM 
     PROPERTY p 
 LEFT JOIN      
-    REVIEW r ON p.property_id = r.property_id;
-
+    REVIEW r ON p.property_id = r.property_id
+ORDER BY
+    p.name ASC;
 
 --FULL OUTER JOIN SCRIPT--
 SELECT 
