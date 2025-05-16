@@ -18,4 +18,9 @@ JOIN
 JOIN
     PROPERTY p ON b.property_id = p.property_id
 LEFT JOIN
-    PAYMENT pay ON b.booking_id = pay.booking_id;
+    PAYMENT pay ON b.booking_id = pay.booking_id
+WHERE 
+    b.start_date >= '2024-01-01' AND b.start_date <= '2024-03-31'
+    AND u.first_name = 'John'
+ORDER BY
+    b.start_date;
