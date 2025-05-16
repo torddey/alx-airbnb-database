@@ -1,0 +1,1 @@
+By ensuring the existence of appropriate indexes, significant refactoring to potentially reduce the execution time of this query is achieved. The structure of the joins is logical for retrieving the requested data.
